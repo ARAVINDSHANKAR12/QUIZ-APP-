@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+        <title>Sign Up</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    {% block css %}
+    <style>
+            body{
+                    background-image:url("https://t3.ftcdn.net/jpg/02/42/77/22/360_F_242772256_PRwokoyoXkDCIISNjfj9N3If0TPFtje8.jpg");
+                    background-repeat: no-repeat;
+                    background-size: 1400px;
+            }
+          .head1 {
+        color: #FBAD30;
+        font-size: 2rem;
+        font-weight: bold;
+        height: 50px;
+          }
+    
+      .head2 {
+        color: #EF4926;
+        font-size: 2rem;
+        font-weight: bold;
+      }
+      .img1{
+              position: absolute;
+              left: 700px;
+              top:100px;
+    
+      }
+      </style>
+      
+
+      
+      <div class="row py-5 p-4 ">
+     
+        <div class="col-lg-6">
+            <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold"
+                style="color:black; font-weight:bold">Sign Up Details</div>
+            <br>
+            <form class="row g-4" method="POST" action="/signup/">{% csrf_token %}
+                <div class="col-md-12">
+                    <label for="inputname" class="form-label" style="font-weight: bold;"><i>
+                            First Name</i></label>
+                    <input type="text" placeholder="Enter First Name" style="text-align: center;border-radius: 20px;"
+                        class="form-control" id="first_name" name="first_name" autocomplete="off" required>
+                </div>
+                <div class="col-md-12">
+                    <label for="inputname" class="form-label" style="font-weight: bold;"><i>
+                            Last Name</i></label>
+                    <input type="text" placeholder="Enter Last Name" style="text-align: center;border-radius: 20px;"
+                        class="form-control" id="last_name" name="last_name" autocomplete="off"  required>
+                </div>
+                <div class="col-md-12">
+                    <label for="inputname" class="form-label" style="font-weight: bold;"><i>
+                            Username</i></label>
+                    <input type="text" placeholder="Enter Username" style="text-align: center;border-radius: 20px;"
+                        class="form-control" id="username" name="username" autocomplete="off"  required>
+                </div>
+                <div class="col-md-12">
+                    <label for="inputname" class="form-label" style="font-weight: bold;"><i>
+                            Email</i></label>
+                    <input type="email" placeholder="Enter your Email" style="text-align: center;border-radius: 20px;"
+                        class="form-control" id="email" name="email" autocomplete="off"  required>
+                </div>
+                <div class="col-md-12">
+                    <label for="inputname" class="form-label" style="font-weight: bold;"><i>
+                            Password</i></label>
+                    <input type="password" placeholder="Enter Password" style="text-align: center;border-radius: 20px;"
+                        class="form-control" id="password1" name="password1" required>
+                </div>
+                <div class="col-md-12">
+                    <label for="inputname" class="form-label" style="font-weight: bold;"><i>
+                            Confirm Password</i></label>
+                    <input type="password" placeholder="Confirm Password" style="text-align: center;border-radius: 20px;"
+                        class="form-control" id="password2" name="password2" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                <br>
+            </div>
+      </div>
+      <img src="https://cdni.iconscout.com/illustration/premium/thumb/sign-up-page-1886582-1598253.png"class=" img1" height=600 width="570">
+      {% endblock %}
