@@ -1,0 +1,136 @@
+Microsoft Windows [Version 10.0.22000.376]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Abinaya>django-admin --version
+4.0
+
+C:\Users\Abinaya> mkdir projects
+
+C:\Users\Abinaya>cd projects
+
+C:\Users\Abinaya\projects>django-admin startproject Quiz
+
+C:\Users\Abinaya\projects>Quiz
+'Quiz' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Abinaya\projects>cd Quiz
+
+C:\Users\Abinaya\projects\Quiz>dir
+ Volume in drive C is OS
+ Volume Serial Number is 6C75-C3EB
+
+ Directory of C:\Users\Abinaya\projects\Quiz
+
+20-12-2021  15:22    <DIR>          .
+20-12-2021  15:22    <DIR>          ..
+20-12-2021  15:22               682 manage.py
+20-12-2021  15:22    <DIR>          Quiz
+               1 File(s)            682 bytes
+               3 Dir(s)  98,205,892,608 bytes free
+
+C:\Users\Abinaya\projects\Quiz>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+December 20, 2021 - 15:27:19
+Django version 4.0, using settings 'Quiz.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[20/Dec/2021 15:28:01] "GET / HTTP/1.1" 200 10697
+[20/Dec/2021 15:28:26] "GET / HTTP/1.1" 200 10697
+[20/Dec/2021 15:30:40] "GET / HTTP/1.1" 200 10697
+[20/Dec/2021 15:35:56,523] - Broken pipe from ('127.0.0.1', 52255)
+
+[20/Dec/2021 15:35:56] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[20/Dec/2021 15:35:56] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[20/Dec/2021 15:35:56] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[20/Dec/2021 15:35:56] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[20/Dec/2021 15:35:56] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[20/Dec/2021 15:35:56] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[20/Dec/2021 15:35:56] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[20/Dec/2021 15:35:56] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+Not Found: /favicon.ico
+[20/Dec/2021 15:35:56] "GET /favicon.ico HTTP/1.1" 404 2108
+Not Found: /favicon.ico
+[20/Dec/2021 15:35:56] "GET /favicon.ico HTTP/1.1" 404 2108
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
